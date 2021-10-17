@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import HelloWorld from './modules/hello-world'
+import candidates from './modules/candidates';
 
 Vue.use(Vuex);
 
@@ -12,6 +13,7 @@ export default new Vuex.Store({
     actions: actions,
     getters: getters,
     modules: {
-        HelloWorld
+        HelloWorld,
+        candidates
     }
 })

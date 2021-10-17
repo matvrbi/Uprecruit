@@ -7,7 +7,8 @@ import Router from 'vue-router'
 import CandidatesLayout from '@/layouts/candidates'
 
 // Views
-import CandidatesIndex from '@/views/candidates'
+import Candidates from '@/views/candidates'
+import CandidateDetails from '@/views/candidates/CandidateDetails';
 
 Vue.use(Router)
 
@@ -27,8 +28,13 @@ const router = new Router({
             children: [
                 {
                     path: '/',
-                    name: 'candidates-index',
-                    component: CandidatesIndex
+                    name: 'Candidates',
+                    component: Candidates
+                },
+                {
+                    path: '/:id',
+                    name: 'CandidateDetails',
+                    component: () => import('@/views/candidates/CandidateDetails.vue'),
                 }
             ]
         }

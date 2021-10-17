@@ -2,9 +2,9 @@
   <div class="component">
     <div class="header">
       <img class="logo"
-           src="https://app.uprecruit.com/img/logo.686e9096.svg">
+           src="https://app.uprecruit.com/img/logo.686e9096.svg" />
     </div>
-    <router-view></router-view>
+    <router-view class="ma-5"></router-view>
   </div>
 </template>
 
@@ -30,7 +30,6 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .header {
   background: rgba(50, 178, 219);
